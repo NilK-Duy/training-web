@@ -1,0 +1,57 @@
+[
+    {
+        "priority": 1,
+        "name": "max-boegl",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "Adams Armaturen",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    },
+    {
+        "name": "KAEFER UK & Ireland ",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "Accenture",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    },
+    {
+        "name": "Karcoma",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "AZ-Armaturen",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    },
+    {
+        "name": "Holter Regelarmaturen",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "AZ-Armaturen",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    },
+    {
+        "name": "Holter Regelarmature",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "AZ-Armaturen",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    },
+    {
+        "name": "Holter Regelarmature",
+        "total_contacts": 100,
+        "added_contacts": 30,
+        "requested": 20,
+        "responsed": 23,
+        "assignedTo": "AZ-Armaturen",
+        "linkedin": ["https://www.wer-zu-wem.de//firma/adams-armaturen.html", "https://www.wer-zu-wem.de//firma/erhard-armaturen.html", "https://www.wer-zu-wem.de//firma/az-armaturen.html"]
+    }
+]

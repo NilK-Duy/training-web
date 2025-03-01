@@ -1,0 +1,1034 @@
+[
+    {
+        "city": "Berlin",
+        "lat": "52.5200",
+        "lng": "13.4050",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Berlin"
+    },
+    {
+        "city": "Stuttgart",
+        "lat": "48.7775",
+        "lng": "9.1800",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Munich",
+        "lat": "48.1375",
+        "lng": "11.5750",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Hamburg",
+        "lat": "53.5500",
+        "lng": "10.0000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hamburg"
+    },
+    {
+        "city": "Cologne",
+        "lat": "50.9364",
+        "lng": "6.9528",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Frankfurt",
+        "lat": "50.1106",
+        "lng": "8.6822",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Düsseldorf",
+        "lat": "51.2333",
+        "lng": "6.7833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Leipzig",
+        "lat": "51.3400",
+        "lng": "12.3750",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony"
+    },
+    {
+        "city": "Dortmund",
+        "lat": "51.5139",
+        "lng": "7.4653",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Essen",
+        "lat": "51.4508",
+        "lng": "7.0131",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Bremen",
+        "lat": "53.0758",
+        "lng": "8.8072",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bremen"
+    },
+    {
+        "city": "Dresden",
+        "lat": "51.0500",
+        "lng": "13.7400",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony"
+    },
+    {
+        "city": "Hannover",
+        "lat": "52.3667",
+        "lng": "9.7167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Nuremberg",
+        "lat": "49.4539",
+        "lng": "11.0775",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Duisburg",
+        "lat": "51.4347",
+        "lng": "6.7625",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Bochum",
+        "lat": "51.4819",
+        "lng": "7.2158",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Wuppertal",
+        "lat": "51.2667",
+        "lng": "7.1833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Bielefeld",
+        "lat": "52.0211",
+        "lng": "8.5347",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Bonn",
+        "lat": "50.7333",
+        "lng": "7.1000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Münster",
+        "lat": "51.9625",
+        "lng": "7.6256",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Mannheim",
+        "lat": "49.4878",
+        "lng": "8.4661",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Karlsruhe",
+        "lat": "49.0092",
+        "lng": "8.4040",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Augsburg",
+        "lat": "48.3689",
+        "lng": "10.8978",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Wiesbaden",
+        "lat": "50.0825",
+        "lng": "8.2400",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Mönchengladbach",
+        "lat": "51.2000",
+        "lng": "6.4333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Gelsenkirchen",
+        "lat": "51.5167",
+        "lng": "7.1000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Aachen",
+        "lat": "50.7756",
+        "lng": "6.0836",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Braunschweig",
+        "lat": "52.2667",
+        "lng": "10.5167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Chemnitz",
+        "lat": "50.8333",
+        "lng": "12.9167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony"
+    },
+    {
+        "city": "Kiel",
+        "lat": "54.3233",
+        "lng": "10.1394",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Halle",
+        "lat": "51.4828",
+        "lng": "11.9697",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony-Anhalt"
+    },
+    {
+        "city": "Magdeburg",
+        "lat": "52.1317",
+        "lng": "11.6392",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony-Anhalt"
+    },
+    {
+        "city": "Freiburg im Breisgau",
+        "lat": "47.9950",
+        "lng": "7.8500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Krefeld",
+        "lat": "51.3333",
+        "lng": "6.5667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Mainz",
+        "lat": "49.9994",
+        "lng": "8.2736",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Lübeck",
+        "lat": "53.8697",
+        "lng": "10.6864",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Oberhausen",
+        "lat": "51.4967",
+        "lng": "6.8706",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Rostock",
+        "lat": "54.0833",
+        "lng": "12.1333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Mecklenburg-Western Pomerania"
+    },
+    {
+        "city": "Kassel",
+        "lat": "51.3158",
+        "lng": "9.4979",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Hagen",
+        "lat": "51.3667",
+        "lng": "7.4833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Potsdam",
+        "lat": "52.4000",
+        "lng": "13.0667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Brandenburg"
+    },
+    {
+        "city": "Saarbrücken",
+        "lat": "49.2333",
+        "lng": "7.0000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saarland"
+    },
+    {
+        "city": "Hamm",
+        "lat": "51.6667",
+        "lng": "7.8167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Ludwigshafen",
+        "lat": "49.4811",
+        "lng": "8.4353",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Oldenburg",
+        "lat": "53.1439",
+        "lng": "8.2139",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Mülheim",
+        "lat": "51.4275",
+        "lng": "6.8825",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Osnabrück",
+        "lat": "52.2833",
+        "lng": "8.0500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Leverkusen",
+        "lat": "51.0333",
+        "lng": "6.9833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Heidelberg",
+        "lat": "49.4167",
+        "lng": "8.7167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Darmstadt",
+        "lat": "49.8722",
+        "lng": "8.6528",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Solingen",
+        "lat": "51.1667",
+        "lng": "7.0833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Regensburg",
+        "lat": "49.0167",
+        "lng": "12.0833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Herne",
+        "lat": "51.5500",
+        "lng": "7.2167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Paderborn",
+        "lat": "51.7181",
+        "lng": "8.7542",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Neuss",
+        "lat": "51.2000",
+        "lng": "6.7000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Ingolstadt",
+        "lat": "48.7631",
+        "lng": "11.4250",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Fürth",
+        "lat": "49.4667",
+        "lng": "11.0000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Ulm",
+        "lat": "48.4000",
+        "lng": "9.9833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Heilbronn",
+        "lat": "49.1500",
+        "lng": "9.2167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Pforzheim",
+        "lat": "48.8950",
+        "lng": "8.7050",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Würzburg",
+        "lat": "49.7833",
+        "lng": "9.9333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Wolfsburg",
+        "lat": "52.4231",
+        "lng": "10.7872",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Göttingen",
+        "lat": "51.5339",
+        "lng": "9.9356",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Bottrop",
+        "lat": "51.5247",
+        "lng": "6.9228",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Reutlingen",
+        "lat": "48.4833",
+        "lng": "9.2167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Erlangen",
+        "lat": "49.5833",
+        "lng": "11.0167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Bremerhaven",
+        "lat": "53.5500",
+        "lng": "8.5833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bremen"
+    },
+    {
+        "city": "Koblenz",
+        "lat": "50.3597",
+        "lng": "7.5978",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Bergisch Gladbach",
+        "lat": "50.9918",
+        "lng": "7.1303",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Remscheid",
+        "lat": "51.1833",
+        "lng": "7.2000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Trier",
+        "lat": "49.7567",
+        "lng": "6.6414",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Recklinghausen",
+        "lat": "51.5850",
+        "lng": "7.1619",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Jena",
+        "lat": "50.9272",
+        "lng": "11.5861",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Thuringia"
+    },
+    {
+        "city": "Moers",
+        "lat": "51.4592",
+        "lng": "6.6197",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Salzgitter",
+        "lat": "52.1500",
+        "lng": "10.3333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Siegen",
+        "lat": "50.8833",
+        "lng": "8.0167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Gütersloh",
+        "lat": "51.9000",
+        "lng": "8.3833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Hildesheim",
+        "lat": "52.1500",
+        "lng": "9.9500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Lower Saxony"
+    },
+    {
+        "city": "Hanau",
+        "lat": "50.1328",
+        "lng": "8.9169",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Kaiserslautern",
+        "lat": "49.4447",
+        "lng": "7.7689",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Schwerin",
+        "lat": "53.6333",
+        "lng": "11.4167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Mecklenburg-Western Pomerania"
+    },
+    {
+        "city": "Esslingen",
+        "lat": "48.7333",
+        "lng": "9.3167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Ludwigsburg",
+        "lat": "48.8975",
+        "lng": "9.1922",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Flensburg",
+        "lat": "54.7819",
+        "lng": "9.4367",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Gladbeck",
+        "lat": "51.5667",
+        "lng": "6.9667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Rosenheim",
+        "lat": "47.8500",
+        "lng": "12.1333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Herten",
+        "lat": "51.6000",
+        "lng": "7.1333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Sankt Augustin",
+        "lat": "50.7700",
+        "lng": "7.1867",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Hilden",
+        "lat": "51.1714",
+        "lng": "6.9394",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Elmshorn",
+        "lat": "53.7519",
+        "lng": "9.6511",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Halle-Neustadt",
+        "lat": "51.4789",
+        "lng": "11.9214",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Saxony-Anhalt"
+    },
+    {
+        "city": "Fellbach",
+        "lat": "48.8086",
+        "lng": "9.2758",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Pinneberg",
+        "lat": "53.6333",
+        "lng": "9.8000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Siegburg",
+        "lat": "50.8014",
+        "lng": "7.2044",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Germering",
+        "lat": "48.1333",
+        "lng": "11.3667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Ostfildern",
+        "lat": "48.7333",
+        "lng": "9.2500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Kornwestheim",
+        "lat": "48.8598",
+        "lng": "9.1852",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Unterschleißheim",
+        "lat": "48.2833",
+        "lng": "11.5667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Hattersheim",
+        "lat": "50.0722",
+        "lng": "8.4864",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Unterhaching",
+        "lat": "48.0658",
+        "lng": "11.6100",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Obertshausen",
+        "lat": "50.0667",
+        "lng": "8.8333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Weingarten",
+        "lat": "47.8092",
+        "lng": "9.6444",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Bad Soden am Taunus",
+        "lat": "50.1333",
+        "lng": "8.5000",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Haar",
+        "lat": "48.1000",
+        "lng": "11.7333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Ottobrunn",
+        "lat": "48.0667",
+        "lng": "11.6667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Eschborn",
+        "lat": "50.1436",
+        "lng": "8.5700",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Puchheim",
+        "lat": "48.1500",
+        "lng": "11.3500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Bockum",
+        "lat": "51.3333",
+        "lng": "6.5667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Gröbenzell",
+        "lat": "48.2000",
+        "lng": "11.3667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Schenefeld",
+        "lat": "53.6028",
+        "lng": "9.8233",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Wolfratshausen",
+        "lat": "47.9133",
+        "lng": "11.4278",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Glinde",
+        "lat": "53.5406",
+        "lng": "10.2111",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Eilendorf",
+        "lat": "50.7794",
+        "lng": "6.1625",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "North Rhine-Westphalia"
+    },
+    {
+        "city": "Eppelheim",
+        "lat": "49.4000",
+        "lng": "8.6333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Neubiberg",
+        "lat": "48.0833",
+        "lng": "11.6833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Asperg",
+        "lat": "48.9000",
+        "lng": "9.1333",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Wentorf bei Hamburg",
+        "lat": "53.4931",
+        "lng": "10.2533",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hamburg"
+    },
+    {
+        "city": "Kronshagen",
+        "lat": "54.3333",
+        "lng": "10.0833",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Schleswig-Holstein"
+    },
+    {
+        "city": "Eichenau",
+        "lat": "48.1667",
+        "lng": "11.3167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Kriftel",
+        "lat": "50.0833",
+        "lng": "8.4500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Steinbach am Taunus",
+        "lat": "50.1667",
+        "lng": "8.5667",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Weißenthurm",
+        "lat": "50.4144",
+        "lng": "7.4606",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Rhineland-Palatinate"
+    },
+    {
+        "city": "Neulußheim",
+        "lat": "49.2933",
+        "lng": "8.5219",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Eichwalde",
+        "lat": "52.3667",
+        "lng": "13.6167",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Brandenburg"
+    },
+    {
+        "city": "Altbach",
+        "lat": "48.7239",
+        "lng": "9.3797",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Merzhausen",
+        "lat": "47.9664",
+        "lng": "7.8286",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Baden-Württemberg"
+    },
+    {
+        "city": "Buckenhof",
+        "lat": "49.5939",
+        "lng": "11.0500",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Bavaria"
+    },
+    {
+        "city": "Offenbach",
+        "lat": "50.1006",
+        "lng": "8.7665",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Hesse"
+    },
+    {
+        "city": "Erfurt",
+        "lat": "50.9781",
+        "lng": "11.0289",
+        "country": "Germany",
+        "iso2": "DE",
+        "state": "Thuringia"
+    }
+]

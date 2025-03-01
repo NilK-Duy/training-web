@@ -1,0 +1,62 @@
+.delete {
+  margin-top: "10px", pointer;
+}
+
+.delete-icon {
+  color: "#ed6c02";
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  width: 100%;
+}
+
+.header {
+  background-color: #8770fd;
+  /* padding-left: 0.5em; */
+  margin: 0 auto;
+}
+
+.oddRow {
+  background: linear-gradient(0deg, #e7e2ff, #e7e2ff), linear-gradient(0deg, #ebe8e8, #ebe8e8);
+  color: #e7e2ff;
+}
+
+.evenRow {
+  color: #ebe8e8;
+}
+
+.companyInfor {
+  display: grid;
+  grid-template-areas: "a a a a" "b c c c";
+  gap: 30px;
+  width: 640px;
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #ebe8e8;
+  padding: 1em;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+
+g.MuiChartsLegend-root.MuiChartsLegend-row.css-1u0lry5-MuiChartsLegend-root {
+  display: none;
+}
+
+g.MuiChartsAxis-root.MuiChartsAxis-directionY.MuiChartsAxis-left.css-1k2u9zb-MuiChartsAxis-root {
+  display: none;
+}
+
+g.MuiChartsAxis-root.MuiChartsAxis-directionX.MuiChartsAxis-bottom.css-1k2u9zb-MuiChartsAxis-root {
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  width: 100%;
+}
