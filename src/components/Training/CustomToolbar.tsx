@@ -22,7 +22,7 @@ const CustomToolbar = (props: {
   handleAddCompaniesAndRemove?: () => void,
   inputValue?: string,
   setInputValue?: (value: string) => void,
-  companyColumnVisibility?: GridColumnVisibilityModel,
+  trainingColumnVisibility?: GridColumnVisibilityModel,
 }) => {
   const {
     filtersButton = false, 

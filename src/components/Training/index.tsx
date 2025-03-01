@@ -14,8 +14,6 @@ import { getTrainings } from "../../helpers/fetch";
 import { formatCurrency } from "../../helpers/formatNumber";
 import StripedDataTable from "../StripedDataTable";
 import CustomToolbar from "./CustomToolbar";
-import { Workbook } from "exceljs";
-import { saveAs } from "file-saver-es";
 
 dayjs.extend(isSameOrAfter);
 dayjs.extend(isSameOrBefore);
@@ -27,9 +25,9 @@ const initialState = {
     cities: [],
     selectedCity: [],
     selectedCities: '',
-    companySize: [],
+    trainingSize: [],
     rows: [],
-    companyRows: [],
+    trainingRows: [],
     totalDocs: 0,
     total: 0,
     loadingPage: false,
@@ -45,19 +43,17 @@ const initialState = {
     endNetto: undefined,
     startDate: "",
     endDate: "",
-    pageCompanyTable: 1,
-    limitCompanyTable: 5,
-    rowsCompanyTable: [],
-    totalDocsCompanyTable: 0,
-    loadingCompanyTable: false,
-    errorStatusCompany: null,
-    companyName: "",
+    pageTrainingTable: 1,
+    limitTrainingTable: 5,
+    rowsTrainingTable: [],
+    totalDocsTrainingTable: 0,
+    loadingTrainingTable: false,
+    errorStatusTraining: null,
+    trainingName: "",
 };
 // reducer
 const reducer = (state: any, action: any) => {
     switch (action.type) {
-        case "SET_COMPANY_NAME":
-            return { ...state, companyName: action.payload };
         case 'SET_KEYWORD':
             return { ...state, keyword: action.payload };
         case 'SET_ROWS':
@@ -67,25 +63,25 @@ const reducer = (state: any, action: any) => {
         case 'SET_LOADING_KEYWORD':
             return { ...state, loadingKeyWord: action.payload };
         case 'CLEAR_JOB_FILTER':
-            return { ...state, selectedCity: [], companySize: [], jobFilterStartDate: '', jobFilterEndDate: '', selectedJobStatus: "", selectedStatusPartner: [], businessArea: [], jobSearch: "" };
+            return { ...state, selectedCity: [], trainingSize: [], jobFilterStartDate: '', jobFilterEndDate: '', selectedJobStatus: "", selectedStatusPartner: [], businessArea: [], jobSearch: "" };
         case 'SET_JOB_TAB':
             return { ...state, jobTab: action.payload };
         case 'SET_JOB_SEARCH':
             return { ...state, jobSearch: action.payload };
-        case 'SET_PAGE_COMPANY':
-            return { ...state, pageCompanyTable: action.payload };
-        case 'SET_ROWS_COMPANY':
-            return { ...state, rowsCompanyTable: action.payload };
-        case 'SET_TOTAL_DOCS_COMPANY':
-            return { ...state, totalDocsCompanyTable: action.payload };
-        case 'SET_LOADING_COMPANY_TABLE':
-            return { ...state, loadingCompanyTable: action.payload };
+        case 'SET_PAGE_TRAINING':
+            return { ...state, pageTrainingTable: action.payload };
+        case 'SET_ROWS_TRAINING':
+            return { ...state, rowsTrainingTable: action.payload };
+        case 'SET_TOTAL_DOCS_TRAINING':
+            return { ...state, totalDocsTrainingTable: action.payload };
+        case 'SET_LOADING_TRAINING_TABLE':
+            return { ...state, loadingTrainingTable: action.payload };
         case 'SET_JOB_FILTER_START_DATE':
             return { ...state, jobFilterStartDate: action.payload }
         case 'SET_JOB_FILTER_END_DATE':
             return { ...state, jobFilterEndDate: action.payload }
-        case 'SET_ERROR_STATUS_COMPANY':
-            return { ...state, errorStatusCompany: action.payload }
+        case 'SET_ERROR_STATUS_TRAINING':
+            return { ...state, errorStatusTraining: action.payload }
         default:
             return state;
     }
@@ -140,9 +136,9 @@ const Training = () => {
     const keywordSearchBtnRef = useRef<HTMLButtonElement>(null);
     const [searchParams, setSearchParams] = useSearchParams();
 
-    const [limitCompanyTable, setLimitCompanyTable] = useState<number>(5)
+    const [limitTrainingTable, setLimitTrainingTable] = useState<number>(5)
     const [inputValue, setInputValue] = useState("")
-    const [sortCompanyTable, setSortCompanyTable] = useState<GridSortModel>();
+    const [sortTrainingTable, setSortTrainingTable] = useState<GridSortModel>();
 
     
     function timeout(ms: number) {
@@ -152,19 +148,8 @@ const Training = () => {
     useEffect(() => {
         (async () => {
             const searchParams = new URLSearchParams(location.search);
-
             const keyword = searchParams.get("q");
-            const jobFilterStartDate = searchParams.get("jobFilterStartDate");
-            const jobFilterEndDate = searchParams.get("jobFilterEndDate");
-            const jobSearch = searchParams.get("jobSearch");
-
             if (keyword) dispatch({ type: "SET_KEYWORD", payload: keyword });
-
-            if (jobFilterStartDate) dispatch({ type: "SET_JOB_FILTER_START_DATE", payload: jobFilterStartDate });
-            if (jobFilterEndDate) dispatch({ type: "SET_JOB_FILTER_END_DATE", payload: jobFilterEndDate });
-
-            if (jobSearch) dispatch({ type: "SET_JOB_SEARCH", payload: jobSearch });
-
             await timeout(2000);
             keywordSearchBtnRef.current?.click();
         })()
@@ -191,11 +176,11 @@ const Training = () => {
             if (debounceKeyword !== "" && debounceKeyword?.length > 0) {
                 try {
                     dispatch({
-                        type: 'SET_LOADING_COMPANY_TABLE',
+                        type: 'SET_LOADING_TRAINING_TABLE',
                         payload: true
                     })
                     dispatch({
-                        type: 'SET_ERROR_STATUS_COMPANY',
+                        type: 'SET_ERROR_STATUS_TRAINING',
                         payload: null,
                     })
                     const keywords = debounceKeyword
@@ -204,60 +189,38 @@ const Training = () => {
                         .filter((kw: string) => kw)
                         .filter((kw: string, index: number, self: string[]) => self.indexOf(kw) === index);
 
-                    const resCompany = await getTrainings([...keywords]);
+                    const resTraining = await getTrainings([...keywords]);
                     dispatch({
-                        type: 'SET_ROWS_COMPANY',
-                        payload: resCompany.docs.map((d: any, index: number) => ({ id: index, ...d }))
+                        type: 'SET_ROWS_TRAINING',
+                        payload: resTraining.docs.map((d: any, index: number) => ({ id: index, ...d }))
                     })
                     dispatch({
-                        type: 'SET_TOTAL_DOCS_COMPANY',
-                        payload: resCompany.totalDocs
+                        type: 'SET_TOTAL_DOCS_TRAINING',
+                        payload: resTraining.totalDocs
                     })
                 } catch (error) {
                     const status = axios.isAxiosError(error) ? error.response?.status ?? null : null;
                     dispatch({
-                        type: 'SET_ERROR_STATUS_COMPANY',
+                        type: 'SET_ERROR_STATUS_TRAINING',
                         payload: status,
                     })
                 } finally {
                     dispatch({
-                        type: 'SET_LOADING_COMPANY_TABLE',
+                        type: 'SET_LOADING_TRAINING_TABLE',
                         payload: false
                     })
                 }
             }
         }
         fetch()
-    }, [state.pageCompanyTable, limitCompanyTable, sortCompanyTable])
-
-
-
-    type CompanyRow = {
-        keyword: string;
-        companySrc: string;
-        name: string;
-        count: number;
-        maxAge: number;
-        minAge: number;
-        avgAge: number;
-        jobNewTodayCount: number;
-        jobRemoveTodayCount: number;
-        staffCountGlobal: string | number | null;
-        revenueInEuro: string | null;
-        region: string | null,
-        miningDate?: string | Date;
-        createdAt?: string | Date;
-        updatedAt?: string | Date;
-        headquarter?: string;
-        [key: string]: any;
-    };
+    }, [state.pageTrainingTable, limitTrainingTable, sortTrainingTable])
 
     const filterJobByKeyword = async () => {
 
         updateUrlQueries();
         
         // dispatch({
-        //     type: 'SET_PAGE_COMPANY',
+        //     type: 'SET_PAGE_TRAINING',
         //     payload: 1
         // })
         // dispatch({
@@ -274,7 +237,7 @@ const Training = () => {
                     .filter((kw: string, index: number, self: string[]) => self.indexOf(kw) === index);
 
                 dispatch({
-                    type: 'SET_LOADING_COMPANY_TABLE',
+                    type: 'SET_LOADING_TRAINING_TABLE',
                     payload: true
                 })
                 dispatch({
@@ -285,24 +248,24 @@ const Training = () => {
 
                 try {
 
-                    const resCompany = await getTrainings([...keywords])
+                    const resTraining = await getTrainings([...keywords])
                     dispatch({
-                        type: 'SET_ROWS_COMPANY',
-                        payload: resCompany.docs.map((d: any, index: number) => ({ id: index, ...d }))
+                        type: 'SET_ROWS_TRAINING',
+                        payload: resTraining.docs.map((d: any, index: number) => ({ id: index, ...d }))
                     })
                     dispatch({
-                        type: 'SET_TOTAL_DOCS_COMPANY',
-                        payload: resCompany.totalDocs
+                        type: 'SET_TOTAL_DOCS_TRAINING',
+                        payload: resTraining.totalDocs
                     })
                 } catch (error) {
                     const status = axios.isAxiosError(error) ? error.response?.status ?? null : null;
                     dispatch({
-                        type: 'SET_ERROR_STATUS_COMPANY',
+                        type: 'SET_ERROR_STATUS_TRAINING',
                         payload: status,
                     })
                 } finally {
                     dispatch({
-                        type: 'SET_LOADING_COMPANY_TABLE',
+                        type: 'SET_LOADING_TRAINING_TABLE',
                         payload: false
                     })
                 }
@@ -318,10 +281,6 @@ const Training = () => {
             }
 
         }
-    }
-
-    const handleJobFilter = () => {
-        filterJobByKeyword()
     }
 
     const setParam = (key: string, value: any) => {
@@ -349,7 +308,7 @@ const Training = () => {
             // sessionStorage.setItem("analyticsFilter", currentQueryString);
 
             dispatch({ type: 'SET_LOADING_KEYWORD', payload: true });
-            dispatch({ type: 'SET_ERROR_STATUS_COMPANY', payload: null });
+            dispatch({ type: 'SET_ERROR_STATUS_TRAINING', payload: null });
 
             await filterJobByKeyword();
 
@@ -361,7 +320,7 @@ const Training = () => {
         }
     }
 
-    const definedCompanyColumns: GridColDef[] = [
+    const definedTrainingColumns: GridColDef[] = [
         {
             field: "keyword",
             headerName: "Keyword",
@@ -385,7 +344,7 @@ const Training = () => {
                     <div style={{ textAlign: "right" }}>
                         <div>
                             <a target="_blank" rel="noreferrer" >
-                                {params.row.name}
+                                Draphony
                             </a>
                         </div>
                     </div>
@@ -450,7 +409,7 @@ const Training = () => {
             align: "right",
             headerAlign: "right",
             renderCell: (params: GridRenderCellParams) => params.value
-                ? `${params.value}`
+                ? `${params.value[0]}`
                 : "",
         },
     ]
@@ -469,23 +428,23 @@ const Training = () => {
         }, {});
     };
 
-    const unwantedCompanyKeys = ["_id", "id", "createdAt", "updatedAt"];
+    const unwantedTrainingKeys = ["_id", "id", "createdAt", "updatedAt"];
 
-    const companyColumns = () => {
+    const trainingColumns = () => {
         const allFields = new Set<string>();
 
-        if (state.rowsCompanyTable && state.rowsCompanyTable.length > 0) {
-            state.rowsCompanyTable.forEach((item: any) => {
+        if (state.rowsTrainingTable && state.rowsTrainingTable.length > 0) {
+            state.rowsTrainingTable.forEach((item: any) => {
                 const flatItem = flattenObject(item);
                 Object.keys(flatItem).forEach(key => {
-                    if (!unwantedCompanyKeys.includes(key)) {
+                    if (!unwantedTrainingKeys.includes(key)) {
                         allFields.add(key);
                     }
                 });
             });
         }
 
-        const existingFields = new Set(definedCompanyColumns.map(col => col.field));
+        const existingFields = new Set(definedTrainingColumns.map(col => col.field));
         const newFields = [...allFields].filter(field => !existingFields.has(field));
         const formatHeaderName = (field: string) => {
             const lastPart = field.split(".").pop() ?? field;
@@ -496,7 +455,7 @@ const Training = () => {
             return field.split(".").reduce((acc, key) => acc?.[key], row) ?? "";
         };
 
-        const dynamicCompanyColumns: GridColDef[] = newFields.map(field => ({
+        const dynamicTrainingColumns: GridColDef[] = newFields.map(field => ({
             field: field,
             headerName: formatHeaderName(field),
             renderHeader: () => <Tooltip title={field}><p>{formatHeaderName(field)}</p></Tooltip>,
@@ -509,10 +468,10 @@ const Training = () => {
                 return value || "";
             }
         }));
-        return [...definedCompanyColumns, ...dynamicCompanyColumns];
+        return [...definedTrainingColumns, ...dynamicTrainingColumns];
     };
 
-    const visibleFieldsCompany = new Set([
+    const visibleFieldsTraining = new Set([
         "keyword",
         "name",
         "title",
@@ -522,24 +481,24 @@ const Training = () => {
         "requirements"
     ]);
 
-    const [companyColumnVisibility, setCompanyColumnVisibility] = useState<GridColumnVisibilityModel>(() => {
+    const [trainingColumnVisibility, setTrainingColumnVisibility] = useState<GridColumnVisibilityModel>(() => {
 
         return Object.fromEntries(
-            definedCompanyColumns.map(col => [col.field, visibleFieldsCompany.has(col.field)])
+            definedTrainingColumns.map(col => [col.field, visibleFieldsTraining.has(col.field)])
 
         );
     });
 
     useEffect(() => {
-        if (state.rowsCompanyTable.length === 0) return;
-        setCompanyColumnVisibility(prev => {
-            const newColumns = companyColumns().reduce((acc, col) => {
-                acc[col.field] = prev[col.field] ?? visibleFieldsCompany.has(col.field);
+        if (state.rowsTrainingTable.length === 0) return;
+        setTrainingColumnVisibility(prev => {
+            const newColumns = trainingColumns().reduce((acc, col) => {
+                acc[col.field] = prev[col.field] ?? visibleFieldsTraining.has(col.field);
                 return acc;
             }, {} as GridColumnVisibilityModel);
             return newColumns;
         });
-    }, [state.rowsCompanyTable]);
+    }, [state.rowsTrainingTable]);
 
     return (
         <StyledComponent>
@@ -606,52 +565,50 @@ const Training = () => {
                     width: '100%',
                 }}>
                     <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-
-
                         <Box sx={{ width: "80%" }}>
-                            {/* Job Market */}
+                            {/* Training */}
                             <Box>
                                 <Box >
                                     <Box sx={{marginLeft: '1rem'}}>
 
-                                        {(state?.companyRows) && (
+                                        {(state?.trainingRows) && (
                                             <StripedDataTable
-                                                currentPage={state.pageCompanyTable > 0 ? state.pageCompanyTable : 1}
+                                                currentPage={state.pageTrainingTable > 0 ? state.pageTrainingTable : 1}
                                                 onChangePageSizeOptions={(limit) => {
-                                                    setLimitCompanyTable(limit)
+                                                    setLimitTrainingTable(limit)
                                                 }}
                                                 getHeight={true}
                                                 handlePage={(page) => {
                                                     dispatch({
-                                                        type: 'SET_PAGE_COMPANY',
+                                                        type: 'SET_PAGE_TRAINING',
                                                         payload: page
                                                     })
                                                 }}
-                                                rowCount={state.totalDocsCompanyTable}
-                                                rows={state.rowsCompanyTable && state.rowsCompanyTable.length > 0 ? state.rowsCompanyTable : []}
-                                                columns={companyColumns()}
-                                                loading={state.loadingCompanyTable}
+                                                rowCount={state.totalDocsTrainingTable}
+                                                rows={state.rowsTrainingTable && state.rowsTrainingTable.length > 0 ? state.rowsTrainingTable : []}
+                                                columns={trainingColumns()}
+                                                loading={state.loadingTrainingTable}
                                                 sortingMode="server"
-                                                sortModel={sortCompanyTable}
-                                                onSortModelChange={(newSortModel) => setSortCompanyTable(newSortModel)}
+                                                sortModel={sortTrainingTable}
+                                                onSortModelChange={(newSortModel) => setSortTrainingTable(newSortModel)}
                                                 autoHeight={true}
                                                 checkboxSelection={false}
-                                                pageSize={limitCompanyTable}
-                                                columnVisibilityModel={companyColumnVisibility}
+                                                pageSize={limitTrainingTable}
+                                                columnVisibilityModel={trainingColumnVisibility}
                                                 onColumnVisibilityModelChange={(newModel: GridColumnVisibilityModel) =>
-                                                    setCompanyColumnVisibility(newModel)
+                                                    setTrainingColumnVisibility(newModel)
                                                 }
                                                 customToolbar={
                                                     <CustomToolbar
                                                         filtersButton={false}
                                                         sortButton={false}
                                                         exportButton={false}
-                                                        // handleGetAllData={handleGetAllCompany}
+                                                        // handleGetAllData={handleGetAllTraining}
                                                         inputValue={inputValue}
                                                         setInputValue={setInputValue}
-                                                        companyColumnVisibility={companyColumnVisibility}
+                                                        trainingColumnVisibility={trainingColumnVisibility}
                                                     />}
-                                                errorStatus={state.errorStatusCompany}
+                                                errorStatus={state.errorStatusTraining}
                                             />
                                         )}
                                     </Box>
